@@ -1,0 +1,51 @@
+/* Default styles for larger screens */
+.banner {
+  width: 100%;
+  position: relative;
+  margin-top: 2%;
+  height: 300px; /* Set a specific height or adjust as needed */
+  background-image: url("../../images/christmas.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  /* Add other styles as needed */
+}
+
+.heading {
+  padding-top: 70px;
+  margin-left: 20%;
+  text-align: left;
+}
+
+h1 {
+  font-family: "Amasis MT Pro Black", sans-serif;
+  font-size: 70px;
+  color: aliceblue;
+}
+
+h3 {
+  font-family: "Amasis MT Pro Black", sans-serif;
+  font-size: 25px;
+  color: aliceblue;
+  text-decoration: underline;
+}
+
+/* Media query for screens less than 600px */
+@media (max-width: 600px) {
+  .banner {
+    height: 200px; /* Adjust the height for smaller screens */
+  }
+
+  .heading {
+    margin-left: 5%; /* Adjust the margin for smaller screens */
+    padding-top: 50px;
+}
+
+  h1 {
+    font-size: 30px; /* Adjust the font size for smaller screens */
+  }
+
+  h3 {
+    font-size: 18px; /* Adjust the font size for smaller screens */
+  }
+}

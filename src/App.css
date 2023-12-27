@@ -1,0 +1,15 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color:#F8F8F8 ;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Add your specific styles for the App component here */
+
+/* ... (additional styles for other components) */

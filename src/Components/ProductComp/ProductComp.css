@@ -1,0 +1,121 @@
+/* ProductComp.css */
+
+/* Overall card container styling */
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to one column on small screens */
+  gap: 12px; /* Add some gap between cards */
+  margin: 20px;
+  z-index: 0;
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+  }
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr); /* Four columns for large screens */
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr); /* Four columns for extra-large screens */
+  }
+}
+
+/* Styling for each product card */
+.Product_card {
+  position: relative;
+  padding: 30px;
+  width: 120%;
+  overflow: hidden;
+  /* Remove margin-right property */
+}
+
+/* Styling for the card header */
+.card-header {
+  position: relative;
+  height: 300px;
+  width: 220px;
+  overflow: hidden;
+  padding: 50px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  
+}
+
+/* Styling for the card image within the header */
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Styling for the card body */
+.card-body {
+  padding: 16px;
+  height: 150px;
+  cursor: pointer;
+}
+
+/* Styling for the card information section */
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  height: 60px;
+  cursor: pointer;
+}
+
+/* Styling for the card title */
+.card-title {
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Styling for the card price */
+.card-price {
+  color: #333;
+  font-size: 16px;
+}
+
+/* Styling for the card description */
+.card-description {
+  color: #555;
+  font-size: 14px;
+}
+
+/* Styling for the card footer */
+.card-footer {
+  padding: 16px;
+  background-color: #f8f8f8;
+}
+
+/* Styling for the 'Add to Cart' button */
+.card-button {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 15%;
+  height: 10%;
+  padding: 5px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border: 1px solid #ddd;
+  z-index: +1;
+}
+
+/* Hover effect for the 'Add to Cart' button */
+.Product_card:hover .card-button {
+  opacity: 1;
+}
+
+/* Hover effect for the 'Add to Cart' button */
+.card-button:hover {
+  background-color: #ddd;
+}

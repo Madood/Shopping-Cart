@@ -1,0 +1,181 @@
+/* Container Styles */
+.Details_container {
+  margin: 50px auto; /* Center the container horizontally */
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(9, 38, 53, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  width: 70%; /* Adjust the width to your preference */
+}
+
+.container_left {
+  width: 30%;
+}
+
+.container_right {
+  width: 60%; /* Adjust the width to maintain symmetry */
+}
+
+/* Image Styles */
+.Details_image {
+  max-width: 100%; /* Make the image responsive */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Header Styles */
+.Details_header {
+  padding: 1rem;
+  flex: 1;
+}
+
+/* Title Styles */
+.Details_title h2 {
+  font-size: 4rem; /* Adjust the font size for symmetry */
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 1rem;
+}
+
+.title-font {
+  font-size: 20px;
+  color: #222222;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+}
+
+/* Button */
+.Details-button {
+  padding: 7px;
+  border-radius: none;
+  width: 150px;
+  border-color: #222222;
+  color: white;
+  background-color: #222222;
+}
+
+.Details-button:hover {
+  background-color: #454545;
+  border: 2px solid black;
+  border-color: #222222;
+  color: white;
+}
+
+/* Description Styles */
+.Details_description {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.5;
+}
+
+.flex {
+  display: flex;
+  margin: 50px 0px;
+}
+
+/* Size Dropdown Styles */
+.left {
+  margin-right: 10px;
+  position: relative;
+}
+
+.left::before {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.left select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 30px 8px 10px;
+  font-size: 14px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.left select:focus {
+  border-color: lightblue;
+}
+
+.mr-3 {
+  padding: 7px;
+}
+
+/* Toggle Button Styles */
+.toggle-button {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+  position: absolute;
+}
+
+.toggle-button:hover {
+  transform: scale(2);
+}
+
+.toggle-button.Left {
+  left: 10px;
+}
+
+.toggle-button.right {
+  right: 10px;
+}
+
+/* Add these styles at the end of your existing CSS file */
+
+/* Quantity Selector Styles */
+.quantity-selector {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-button {
+  padding: 5px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.quantity {
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+
+/* Media Query for Responsive Design */
+@media (max-width: 1200px) {
+  .Details_container {
+    flex-direction: column;
+    width: 80%; /* Adjust width for smaller screens */
+  }
+
+  .Details_image {
+    max-width: 80%; /* Adjust image width for smaller screens */
+    margin: auto;
+  }
+
+  .container_left,
+  .container_right {
+    width: 100%;
+    padding-left: 0; /* Remove padding for smaller screens */
+    margin: 0; /* Remove margin for smaller screens */
+    justify-content: center;
+  }
+
+  .Details_title h2 {
+    font-size: 2rem;
+  }
+}

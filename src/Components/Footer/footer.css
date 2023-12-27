@@ -1,0 +1,102 @@
+/* ShoppingCartFooter.css */
+
+.shopping-cart-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.total-items,
+.subtotal {
+  margin: 0;
+}
+
+.checkout-button {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.contact-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sales-support,
+.customer-care {
+  flex: 1;
+}
+
+.useful-links {
+  margin: 50px 0 0 30%;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 4 columns */
+  grid-template-rows: repeat(3, auto); /* 2 rows */
+  gap: 5px;
+}
+
+.useful-links p {
+  font-weight: bold;
+}
+
+.useful-links ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.useful-links li {
+  flex: 1 1 calc(25% - 5px); /* Adjusted to have four items in one row with gap */
+  margin-bottom: 10px;
+  height: 100px;
+  
+}
+
+.useful-links li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.useful-links li :hover {
+  background-color: #555;
+}
+
+
+
+.copyright p {
+  font-size: 12px;
+}
